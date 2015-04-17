@@ -14,12 +14,16 @@ public class Test {
     /**
      * @param args the command line arguments
      */
+ 
     public static void main(String[] args) {
-        // TODO code application logic here
         
+        // TODO code application logic here
+       
 Thread t = Thread.currentThread();
+    t.setName("pae");
+     t.setPriority(1);
     System.out.println(t.getName());
-    
+     
             System.out.println(t.getPriority());
             System.out.println(t.isAlive());
                 System.out.println(t.isDaemon());
